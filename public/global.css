@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+  font-family: Inter, Ubuntu, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+} 
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #212126;
+}
+
+main {
+  flex: 1;
+}
+
+body,
+h1, 
+h2, 
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+  background: none;
+  padding: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+input:focus,
+button:focus,
+textarea:focus{
+  outline: 2px solid #B0A2FC;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+// адаптив шрифта для mobile first
+@media (min-width: 320px) {
+  html {
+    font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (1512 - 320)));
+  }
+}
